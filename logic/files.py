@@ -1,6 +1,8 @@
 import pandas as pd
 import sqlite3 as sql
 from matplotlib import pyplot as plt
+from numpy.matlib import empty
+
 from entity.player import Player
 from entity.question import Question
 
@@ -11,10 +13,9 @@ def process_trivia_file(filename):
     with open(filename, 'r', encoding='utf-8') as file:  # Opening the file
         for line in file:
             parts = line.strip().split(" - ")  # Return list with questions and answers
-            print(parts[1])
             # Appending the questions list with Questions objects
-            questions.append(Question(parts[0], parts[1], [parts[2], parts[3], parts[4]]))
-
+            if len(parts) >= 5: # Making sure the format is followed
+                questions.append(Question(parts[0], parts[1], [parts[2], parts[3], parts[4]]))
     return questions
 
 
