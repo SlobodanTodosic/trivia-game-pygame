@@ -11,7 +11,7 @@ class Button(UI):
         self.text = text
         self.visible = visible
         self.active = active
-        self.font = pygame.font.Font(None, 23) # Font creaton
+        self.font = pygame.font.SysFont("Consolas", 16) # Font creation
         # Rendering the font on surface
         self.text_surface = self.font.render(self.text, True, scene_manager.colors['white'])
         self.text_rect = self.text_surface.get_rect(center=self.rect.center) # Creating rectangle for Text

@@ -67,6 +67,7 @@ def check_answer(game_scene, event):
 
         return is_correct
     return True
+
 # Function to update question with Next button clicked
 def update_question(questions):
     question = pick_random_question(questions)

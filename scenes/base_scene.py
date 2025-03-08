@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-
 import pygame
 from matplotlib.pyplot import title
 

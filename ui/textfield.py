@@ -5,7 +5,7 @@ class TextField(UI):
     def __init__(self, x, y, width, height,scene_manager):
         super().__init__(x, y, width, height, scene_manager)
         self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
-        self.font = pygame.font.Font(None, 30)
+        self.font = pygame.font.SysFont("Consolas", 20)
         self.text = ""
         self.text_color = (30, 30, 30)
         self.background_color = (255, 255, 255)
