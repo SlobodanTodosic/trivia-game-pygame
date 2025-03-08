@@ -46,7 +46,7 @@ def check_answer(game_scene, event):
     # Getting the clicked button and assigning it to chosen answer
     chosen_answer = next((answer for answer in game_scene.answers_list if answer.is_clicked(event, game_scene.scene_manager.sounds['click'])), None)
     if chosen_answer:
-        game_scene.is_chosen = True # Making var is_chosen to True for future use
+        game_scene.is_chosen = True # Setting variable is_chosen to True for future use
         # Make Next button visible
         game_scene.next_button.active = True
         game_scene.next_button.visible = True

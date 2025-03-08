@@ -7,8 +7,11 @@ class PauseScene(BaseScene):
         w = sm.screen.get_width()
         h = sm.screen.get_height()
         # Creating UI elements
+        self.pause_text = Text(w // 2, h // 2 - 80, 0, 0, sm, "GAME PAUSED", 35)
+        self.pause_text_1 = Text(w // 2, h // 2 - 40, 0, 0, sm, "Logic to be applied in next iteration.", 20)
+        self.pause_text_2 = Text(w // 2, h // 2 - 10, 0, 0, sm, "For now only back to menu scene possible", 20)
         self.exit_button = Button(w // 2 - 40, h - 80, 80, 40, "Exit", sm)
-        self.ui_list.extend([self.exit_button])
+        self.ui_list.extend([self.exit_button, self.pause_text, self.pause_text_1, self.pause_text_2])
 
 
     def start(self):

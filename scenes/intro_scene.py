@@ -14,7 +14,8 @@ class IntroScene(BaseScene):
         self.ui_list.extend([self.button, self.enter_text, self.text_field])
 
     def start(self):
-        pass
+        self.mute_button.visible = True
+        self.mute_button.active = True
 
     def update_scene(self):
         super().update_scene()
