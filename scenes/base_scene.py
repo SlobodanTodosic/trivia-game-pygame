@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 import pygame
 from matplotlib.pyplot import title
 
-from ui.background import Background
+from ui.image import Image
 from ui.text import Text
 from ui.button import Button
 from logic.functions import *
@@ -14,11 +14,11 @@ class BaseScene(ABC):
         w = sm.screen.get_width()
         h = sm.screen.get_height()
         # Creating UI elements
-        self.mute_button = Button(w - 80, 20, 60, 40, "", sm)
+        self.mute_button = Button(w - 80, 20, 60, 40, "", sm, False, False)
         self.mute_button.set_visual_hover('60' if sm.volume == 1 else '61')
-        self.title = Background(w // 2, 100, 200, 100, sm, sm.themes['title-image'])
-        self.background = Background(w // 2, h // 2, w, h, sm,
-                                     pygame.transform.smoothscale(
+        self.title = Image(w // 2, 100, 200, 100, sm, sm.themes['title-image'])
+        self.background = Image(w // 2, h // 2, w, h, sm,
+                                pygame.transform.smoothscale(
                                          get_image(sm.backgrounds[sm.theme_value],
                                                    800, 600), (w, h)))
         self.ui_list = [self.background, self.title, self.mute_button]

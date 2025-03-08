@@ -1,7 +1,6 @@
 import pandas as pd
 import sqlite3 as sql
 from matplotlib import pyplot as plt
-from numpy.matlib import empty
 
 from entity.player import Player
 from entity.question import Question
@@ -44,7 +43,6 @@ def save_score(player, filename):
         "name": [player.name],
         "score": [player.score]
     })
-
     df = pd.concat([df, new_entry], ignore_index=True) # Add new entry to DataFrame
     df.to_sql('scores', conn, if_exists="replace", index=False) # Overwrite new DataFrame to database
 

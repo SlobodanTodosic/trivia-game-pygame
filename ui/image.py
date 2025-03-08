@@ -3,7 +3,7 @@ import pygame
 from logic.functions import get_image
 from ui.ui import UI
 # Creating the
-class Background(UI):
+class Image(UI):
     def __init__(self, x, y, width, height, scene_manager, image):
         super().__init__(x, y, width, height, scene_manager)
         self.image = image
