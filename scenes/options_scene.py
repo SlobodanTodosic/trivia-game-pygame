@@ -6,22 +6,22 @@ class OptionsScene(BaseScene):
         w = sm.screen.get_width()
         h = sm.screen.get_height()
         # Creating UI elements
-        self.number_text = Text(w // 2, h - 425, 0,0, sm, "Number of questions? (One game mode only)", 30)
+        self.number_text = Text(w // 2, h - 425, 0,0, sm, "Number of questions? (One game mode only)", 25)
         self.ten_button = Button(w // 2 - 160, h - 410, 80, 40, "10", sm)
         self.twenty_button = Button(w // 2 - 40, h - 410, 80, 40, "20", sm)
         self.thirty_button = Button(w // 2 + 80, h - 410, 80, 40, "30", sm)
 
-        self.theme_text = Text(w // 2, h - 340, 0, 0, sm, "Chose theme", 30)
+        self.theme_text = Text(w // 2, h - 340, 0, 0, sm, "Chose theme", 25)
         self.light_button = Button(w // 2 - 160, h - 325, 80, 40, "Light", sm)
         self.medium_button = Button(w // 2 - 40, h - 325, 80, 40, "Medium", sm)
         self.dark_button = Button(w // 2 + 80, h - 325, 80, 40, "Dark", sm)
 
-        self.mode_text = Text(w // 2, h - 255, 0, 0, sm, "Chose mode", 30)
+        self.mode_text = Text(w // 2, h - 255, 0, 0, sm, "Chose mode", 25)
         self.one_game = Button(w // 2 - 160, h - 240, 80, 40, "One game", sm)
         self.level_up = Button(w // 2 - 40, h - 240, 80, 40, "Level up", sm)
         self.no_error = Button(w // 2 + 80, h - 240, 80, 40, "No error", sm)
 
-        self.difficulty = Text(w // 2, h - 170, 0, 0, sm, "Difficulty", 30)
+        self.difficulty = Text(w // 2, h - 170, 0, 0, sm, "Difficulty", 25)
         self.easy_btn = Button(w // 2 - 160, h - 155, 80, 40, "Easy", sm)
         self.medium_btn = Button(w // 2 - 40, h - 155, 80, 40, "Medium", sm)
         self.hard_btn = Button(w // 2 + 80, h - 155, 80, 40, "Hard", sm)

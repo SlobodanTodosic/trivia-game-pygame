@@ -9,7 +9,7 @@ class IntroScene(BaseScene):
         h = sm.screen.get_height()
         # Creating UI elements
         self.button = Button(w // 2 - 80, h - 80, 160, 40, "Save and continue", sm)
-        self.enter_text = Text(w // 2 - 100, h - 400, 0, 0, sm, "Enter nickname",40)
+        self.enter_text = Text(w // 2 - 100, h - 400, 0, 0, sm, "Enter nickname",25)
         self.text_field = TextField(w // 2 + 20, h - 420, 240, 40, sm)
         self.ui_list.extend([self.button, self.enter_text, self.text_field])
 

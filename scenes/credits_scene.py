@@ -6,7 +6,7 @@ class CreditsScene(BaseScene):
         w = sm.screen.get_width()
         h = sm.screen.get_height()
         # Creating UI elements
-        self.exam_text = Text(w // 2, h // 2 - 80, 0, 0, sm, "CS324 Skripting jezici", 50)
+        self.exam_text = Text(w // 2, h // 2 - 80, 0, 0, sm, "CS324 Skripting jezici", 35)
         self.student_name_text = Text(w // 2, h // 2 - 30, 0, 0, sm, "Slobodan Todosić, 4653")
         self.professor_name_text = Text(w // 2, h // 2 + 80, 0, 0, sm, "Profesor: Nemanja Zdravković")
         self.assistant_name_text = Text(w // 2, h // 2 + 120, 0, 0, sm, "Asistent: Tamara Vukadinović")

@@ -8,7 +8,7 @@ class GameOverScene(BaseScene):
         h = sm.screen.get_height()
         # Creating UI elements
         self.exit_button = Button(w // 2 - 40, h - 80,80, 40, "Exit", sm)
-        self.game_over_text = Text(w // 2, h // 2 - 80, 0, 0, sm, "GAME OVER", 50)
+        self.game_over_text = Text(w // 2, h // 2 - 80, 0, 0, sm, "GAME OVER", 35)
         self.score_text = Text(w // 2, h // 2, 0, 0, sm,
                                f"{sm.player.name} won {sm.player.score} points!")
         sm.correct_to_level_up = 4

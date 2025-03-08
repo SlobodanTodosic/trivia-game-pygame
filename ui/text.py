@@ -4,9 +4,9 @@ from ui.ui import *
 
 
 class Text(UI):
-    def __init__(self,x, y, width, height, scene_manager, text, font_size=35):
+    def __init__(self,x, y, width, height, scene_manager, text, font_size=20):
         super().__init__(x, y, width, height, scene_manager)
-        self.font = pygame.font.SysFont(None, font_size)
+        self.font = pygame.font.SysFont("Consolas", font_size)
         self.text = text
         self.color = scene_manager.themes['text-color']
         self.surface = self.font.render(self.text, True, self.color)
